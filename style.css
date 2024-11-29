@@ -14,6 +14,11 @@
     /*colocando uma fonte familia para toda a pagina*/
 }
 
+html {
+    width: 100%;
+    height: 100vh;
+}
+
 header {
     /* header modificando o cabeçalho do site */
 
@@ -43,7 +48,7 @@ header nav ul {
 header ul li {
     /*chamamos nossa (li) da header para modificar*/
 
-    margin-right: 45px;
+    margin-right: 1em;
     /*alterando o espaçamento entre as ancoras*/
 }
 
@@ -82,10 +87,12 @@ header img {
 .sec01 {
     /*chamando a sec01 para stetizar*/
 
+    width: auto 100%;
+
     display: flex;
     /*tornando flex e fazendo ficar lado a lado*/
 
-    padding: 250px;
+    padding: 15em;
     /*alterando o tamanho da nossa sec01*/
 
     justify-content: center;
@@ -110,10 +117,10 @@ header img {
 .sec01 button {
     /*chamando o (butão) que esta na sec01*/
 
-    width: 150px;
+    width: 8em;
     /*alterar o tamanho do (butão)*/
 
-    height: 40px;
+    height: 3em;
     /*alterar a autura do botton */
 
     border-radius: 10px;
@@ -146,19 +153,24 @@ header img {
 
 }
 
+
+
+
 .sec02 {
     /*chamando a sec02 para modificar*/
+
+    width: auto 100%;
 
     display: flex;
     /*tornando flex e fazendo ficar lado a lado*/
 
-    padding: 250px;
+    padding: 15em;
     /*alterando o tamanho da nossa sec02*/
 
     background-color: #dcd1b4;
     /*cor de fundo*/
 
-    justify-content: space-evenly;
+    justify-content: center;
     /*justificando para lainhar o conteudo do sec02 */
 }
 
@@ -168,10 +180,10 @@ header img {
     color: rgb(0, 0, 0);
     /*colocando cor*/
 
-    font-size: 20px;
+    font-size: 1.5em;
     /*alterando o tamanho da lentra*/
 
-    margin: 15px;
+    margin: 1rem ;
     /*define a área da margem nos quatro lados do elemento*/
 }
 
@@ -181,17 +193,17 @@ header img {
     color: rgb(0, 0, 0);
     /*colocando uma cor*/
 
-    font-size: 15px;
+    font-size: 1rem;
     /*alterando o tamanho da letra (p)*/
 
-    margin: 15px;
+    margin: 1rem;
     /*define a área da margem nos quatro lados do elemento*/
 }
 
 .sec02 img {
     /*chamando nosssa (img) dentro da sec02 para modificar*/
 
-    width: 350px;
+    width: 20em;
     /*alterar o tamanho da (img)*/
 
     height: 350px;
@@ -218,7 +230,7 @@ header img {
     background-image: url(imagem/escavadeira04.jpg);
     /*colocando imagen de fundo*/
 
-    padding: 350px;
+    padding: 10rem 15rem;
     /*alterando o tamanho da nossa sec03*/
 
     background-repeat: no-repeat;
@@ -237,17 +249,24 @@ header img {
 .sec03 h2 {
     /*chamando nossa (h2) dentro da sec03 para modificar*/
 
+
     color: white;
     /*colocando cor no (h2)*/
 
-    font-size: 15px;
+    font-size: 2em;
     /*tamanho da fonte*/
 
-    margin: 15px;
+    margin: 1em;
     /*define a área da margem nos quatro lados do elemento*/
 
     font-weight: 400px;
     /*tamanho da fonte palavra*/
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    
 }
 
 .sec03 p {
@@ -256,14 +275,19 @@ header img {
     color: rgb(255, 255, 255);
     /*colocando cor no (p)*/
 
-    font-size: 15px;
+    font-size: 1.5em;
     /*mexendo na tamanho da fonte*/
 
-    margin: 15px;
+    margin: 1em;
     /*define a área da margem nos quatro lados do elemento*/
 
     font-weight: 400px;
     /*tamanho da fonte palavra*/
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
 }
 
 .footer01 {
@@ -550,3 +574,29 @@ html {/*chamando o html*/
     scroll-behavior: smooth;/*suavizando a movimentação*/
 }
 /*google fonts Oswald*/
+
+
+
+@media(max-width: 500px) {
+    .sec02 img:hover {
+
+        width: 18em;
+        /*alterando a largura*/
+    
+        transition: 0.8s;
+        /*tempo para aparecer as modificação*/
+    
+        cursor: pointer;
+        /*mudando o cursor do mauze*/
+    
+    }
+
+    .footer01 {
+        display: block;
+        text-align: center;
+    }
+
+    .div-line .line {
+        width: 18em;/*largura da linha*/
+    }
+}
